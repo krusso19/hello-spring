@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+    <ul>
+        //for each name in a list called names, do whatever is in this block tag
+        //name is local. names is not. names comes from a controller
+        <th:block th:each ="name : ${names}">
+            <li th:text="${name}"></li>
+        </th:block>
+    </ul>
+</body>
+</html>
